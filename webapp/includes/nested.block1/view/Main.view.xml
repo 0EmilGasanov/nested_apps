@@ -1,0 +1,5 @@
+<View controllerName="nested.block1.controller.Main" displayBlock="true"  xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:layout="sap.ui.layout" xmlns:semantic="sap.m.semantic" >
+		
+		<core:Fragment fragmentName="nested.block1.fragment.ApplicantDetail" type="XML" />	
+
+</View>

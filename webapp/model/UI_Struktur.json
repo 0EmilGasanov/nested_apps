@@ -1,0 +1,87 @@
+{
+    "User": {
+        "UserId": 13234,
+        "PermitEdit": true,
+        "CandidateRole": {
+            "CandidateId": 12345666,
+            "CandidateDataEditable": true,
+            "ApplicationDataEditable": false,
+            "Sections": [
+                {
+                    "SectionTitle": "Section 1",
+                    "SectionIcon": "sap-icon://employee",
+                    "SubSections": [
+                        {
+                            "SubSectionTitle": "",
+                            "SubSectionIcon": "sap-icon://employee",
+                            "SubSectionId": "block1Component",
+                            "Blocks": [
+                                {
+                                    "ComponentName": "block1DisplayComponent",
+                                    "ComponentPath": "nested.block1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "SectionTitle": "Section 2",
+                    "SectionIcon": "sap-icon://curriculum",
+                    "SubSections": [
+                        {
+                            "SubSectionTitle": "Subsection2",
+                            "BlockComponentName": "ApplicationDataDisplayComponent",
+                            "BlockComponentPath": "nested.application.applicationData",
+                            "SubSectionIcon": "sap-icon://curriculum",
+                            "Blocks": [
+                                {
+                                    "ComponentName": "ApplicationDataDisplayComponent",
+                                    "ComponentPath": "nested.block2"
+                                }
+                            ]
+                        },
+                        {
+                            "SubSectionTitle": "Subsection3",
+                            "SubSectionId": "ApplicationFlagComponent",
+                            "SubSectionIcon": "sap-icon://curriculum",
+                            "Blocks": [
+                                {
+                                    "ComponentName": "ApplicationFlagComponent",
+                                    "ComponentPath": "nested.block3"
+                                }
+                            ]
+                        },
+                        {
+                            "SubSectionTitle": "Subsection4",
+                            "SubSectionId": "ApplicationAdvertsComponent",
+                            "SubSectionIcon": "sap-icon://curriculum",
+                            "Blocks": [
+                                {
+                                    "ComponentName": "ApplicationAdvertsComponent",
+                                    "ComponentPath": "nested.block4"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "SectionTitle": "Section 3",
+                    "SectionIcon": "sap-icon://employee",
+                    "SubSections": [
+                        {
+                            "SubSectionTitle": "",
+                            "SubSectionIcon": "sap-icon://employee",
+                            "SubSectionId": "block1Component",
+                            "Blocks": [
+                                {
+                                    "ComponentName": "block1DisplayComponent",
+                                    "ComponentPath": "nested.block5"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

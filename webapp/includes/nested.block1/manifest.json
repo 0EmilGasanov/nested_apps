@@ -1,0 +1,97 @@
+{
+	"_version": "1.7.0",
+	"sap.app": {
+		"id": "nested.block1",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{app.title}}",
+		"description": "{{app.description}}",
+		"dataSources": {}
+	},
+
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_belize"
+		]
+	},
+
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "nested.block1.view.App",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.44.12",
+			"libs": {
+				"sap.m": {},
+				"sap.ui.core": {},
+				"sap.ui.layout": {},
+				"sap.ui.table": {},
+				"sap.ui.unified": {},
+				"sap.uxap": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "nested.block1.i18n.i18n"
+				}
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "nested.block1.view",
+				"controlId": "app",
+				"controlAggregation": "pages"
+			},
+			"routes": [	
+				{
+					"pattern": "",
+					"name": "candidate.empty",
+					"target": "main"
+				},
+				{
+					"pattern": "{candidateId}/:applicationId:/:vacancyId:",
+					"name": "main",
+					"target": "main"
+				}
+			],
+			"targets": {
+				"main": {
+					"viewName": "Main",
+					"viewLevel": 1
+				}
+			}
+		}
+	}
+}

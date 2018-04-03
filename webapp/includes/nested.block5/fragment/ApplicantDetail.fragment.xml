@@ -1,0 +1,54 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+	<l:VerticalLayout width="auto">
+		<l:content>
+		<FlexBox justifyContent="End">
+		<Button id="referenceDataButton" icon="sap-icon://personnel-view" />
+		<Button id="contractDataButton" icon="sap-icon://customer-order-entry" />
+		<Button id="verknuepfenButton" icon="sap-icon://add-contact" />
+		<Button id="personalstammdatenButton" icon="sap-icon://employee-pane" />
+		<Button icon="sap-icon://edit" >
+			<customData>
+				<core:CustomData key="id" value="Applicant"/>
+			</customData>
+		</Button>
+		<Button icon="sap-icon://email" >
+			<customData>
+				<core:CustomData key="id" value="Applicant"/>
+			</customData>
+		</Button>
+		</FlexBox>
+		<f:SimpleForm
+			editable="false"
+			layout="ResponsiveGridLayout"
+			labelSpanXL="4"
+			labelSpanL="4"
+			labelSpanM="4"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="0"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="3"
+			columnsL="2"
+			columnsM="2"
+			singleContainerFullSize="false">
+			<f:content>
+				<core:Title text="Title"/>
+				<Label text="Label" />
+				<Text text="Text" />
+				<Label text="Label"/>
+				<Text text="Text"/>
+				<Label text="Label" />
+				<Text text="Text" />
+				<Label text="Label"/>
+				<Text text="Text"/>
+			</f:content>
+		</f:SimpleForm>
+	</l:content>
+</l:VerticalLayout>
+</core:FragmentDefinition>

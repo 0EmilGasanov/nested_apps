@@ -1,0 +1,8 @@
+{
+    "sapProtocol": "http",
+    "sapHost": "test.host",
+    "sapPort": 8020,
+    "sapBspContainer": "Z_TEMPLATE",
+    "sapPackage": "$TMP",
+    "sapTransport": ""
+}

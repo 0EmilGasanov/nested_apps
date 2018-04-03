@@ -1,0 +1,36 @@
+<mvc:View controllerName="template.controller.Main" displayBlock="true" 
+	xmlns="sap.uxap" 
+	xmlns:m="sap.m" 
+	xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns:layout="sap.ui.layout" 
+	xmlns:semantic="sap.m.semantic" 
+	>
+	<m:Page showNavButton="false" showFooter="true" floatingFooter="false" showHeader="true" enableScrolling="true">
+		<m:content>
+			<ObjectPageLayout flexEnabled="true" id="mainObjectPageLayout" showTitleInHeaderContent="true" showHeaderContent="true" sections="{UICustomizing>/User/CandidateRole/Sections}" enableLazyLoading="true">
+				<headerTitle>
+					<ObjectPageHeader id="objectPageHeader" objectImageURI="{BewerberfotoUrl}" objectTitle="{FormattedName} ({CandidateId})" objectImageShape="Circle" isActionAreaAlwaysVisible="true" isObjectIconAlwaysVisible="false" isObjectTitleAlwaysVisible="false" isObjectSubtitleAlwaysVisible="false" showPlaceholder="true" headerDesign="Light">
+						<actions>
+							<ObjectPageHeaderActionButton id="idTasksButton" hideText="false" press="onTasksButtonPress" class="warningButton" icon="sap-icon://message-warning" iconFirst="true" tooltip="{i18n>tooltip.tasksButton}"/>
+						</actions>
+					</ObjectPageHeader>
+				</headerTitle>
+				<headerContent>
+				</headerContent>
+				<sections>
+					<ObjectPageSection title="{UICustomizing>SectionTitle}" Icon="{UICustomizing>SectionIcon}" subSections="{UICustomizing>SubSections}">
+						<subSections>
+							<ObjectPageSubSection title="{UICustomizing>SubSectionTitle}" blocks="{UICustomizing>Blocks}">
+								<core:ComponentContainer name="{UICustomizing>ComponentPath}" propagateModel="true">	
+								</core:ComponentContainer>
+							</ObjectPageSubSection>
+						</subSections>
+					</ObjectPageSection>
+				</sections>
+			</ObjectPageLayout>
+		</m:content>
+		<m:footer>
+		</m:footer>
+	</m:Page>
+</mvc:View>
